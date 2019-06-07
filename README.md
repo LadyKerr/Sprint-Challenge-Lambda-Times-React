@@ -29,9 +29,23 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 ## Self-Study/Essay Questions
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+
+Proptypes are used to validate and verify that the data that is passed through is represented the way we want it to. It’s important to check out data so that we catch errors before they happen. We want to make sure that is a number should be a number, it is passed as a number and not a string or a symbol for some reason.
+
+
+
 - [ ] Describe a life-cycle event in React?
+
+The life cycle event has three phases: mounting, updating and unmounting. During mounting, the component is built, the data is being defined/stored and the render method is invoked. During the updating phase, setState() is used to update the state data; the render method is also called here and during the unmounting phase, the component is removed from the screen.
+
 - [ ] Explain the details of a Higher Order Component?
+
+HOCs are used to share complex data throughout the application via currying. It gives us the ability to reuse the functionality of a component without passing state and props the regular way. It takes in a component as an argument, then passes that component as a react element.
+
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+
+Components can be styled through reactstrap/bootstrap, styled-components and vanilla css. Reactstrap makes it easy to utilize an already built out library to render data to the screen beautifully quickly. Styled-components is a relatively new way of styling react apps. You can pass styles as a function using backticks then passing down the function as a react element. Vanilla css can also be used the regular way with preprocessors like sass/less to take advantage of nesting, variables, etc.
+
 
 ## Project Setup
 
