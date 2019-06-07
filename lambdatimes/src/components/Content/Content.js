@@ -44,7 +44,10 @@ export default class Content extends Component {
         - else, it should only return those cards whose 'tab' matched this.state.selected.
     */
    filterCards = () => {
-    return this.state.cards;
+    return (this.state.selected === 'all' ? this.state.cards 
+      : this.state.cards.filter(card => (
+        card.tab === this.state.selected
+    )));
   };
 
   render() {
